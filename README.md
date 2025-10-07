@@ -39,15 +39,31 @@ Figure 02  Encoder 8 * 3
 /* write all the steps invloved */
 
 **PROGRAM**
+SERIAL IN SERIAL OUT SHIFT REGISTER
 
+module EXP10(clk, sin, q);
+input clk;
+input sin;
+output [3:0] q;
+reg [3:0] q;
+always @(posedge clk)
+begin
+q[0] <= sin;
+q[1] <= q[0];
+q[2] <= q[1];
+q[3] <= q[2];
+end
+endmodule
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
 Developed by: RegisterNumber:
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+<img width="515" height="168" alt="Screenshot 2025-10-07 204224" src="https://github.com/user-attachments/assets/d3330d49-d031-413a-a6d8-7c8a75ccdc14" />
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![sanjay5](https://github.com/user-attachments/assets/836e3799-8cee-45b5-b679-79788712a393)
 
 **RESULTS**
 
