@@ -66,7 +66,7 @@ Developed by: RegisterNumber:
 ![sanjay5](https://github.com/user-attachments/assets/836e3799-8cee-45b5-b679-79788712a393)
 
 **RESULTS**
-
+Hence verified using quarus software
 
 
 
